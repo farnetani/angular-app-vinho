@@ -1,0 +1,28 @@
+<nav *ngIf="autenticacaoService.usuarioLogado" class="navbar navbar-expand-lg navbar-dark fs-bg">
+    <a class="navbar-brand" href="#">Gestão de Vinhos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/vinhos" routerLinkActive="active" destacarEstilo>Listagem de vinhos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cadastro-vinho" routerLinkActive="active" destacarEstilo>Cadastro de vinhos</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" (click)="autenticacaoService.logout()" routerLinkActive="active" destacarEstilo>Sair</a>
+        </li>         
+      </ul>
+    </div>
+    <a href="#" class="navbar-brand">Bem vindo {{ autenticacaoService.nomeUsuarioLogado | uppercase }}.</a>
+    <a href="#" class="navbar-brand">Hoje é dia: {{dataHoje | date: 'dd/MM/yyyy'}}</a>
+  </nav>
+
+  <div class="body container">
+    <farsoft-notificacao></farsoft-notificacao>
+      <!-- <farsoft-vinhos></farsoft-vinhos> -->
+      <!-- <farsoft-cadastro-vinho></farsoft-cadastro-vinho> -->
+      <router-outlet></router-outlet>      
+  </div>

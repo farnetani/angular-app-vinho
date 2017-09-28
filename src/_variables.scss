@@ -1,0 +1,41 @@
+$brand-primary: #2a2f50;
+$cor-primaria: #2a2f50;
+
+.btn-primary {
+    background-color: #2a2f50;
+    border-color: #2a2f50;    
+}
+
+
+// .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+//     color: red;
+// }
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: white;
+    // background-color: $brand-primary;
+    //border: 2px dashed red;
+    border: 1.5px dotted white;
+    border-radius: 25px;
+
+    // border-left: 6px solid $cor-primaria ;
+    // background-color: lightgray;    
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white;
+    // background-color: $brand-primary;
+    //border: 2px dashed red;
+    border: 1.5px dotted white;
+    border-radius: 25px;
+    border-radius: 10px;
+
+    // border-left: 6px solid $cor-primaria ;
+    // background-color: lightgray; 
+    padding: 10px;   
+}
+
+
+.fs-bg {
+    background-color: $cor-primaria;    
+}

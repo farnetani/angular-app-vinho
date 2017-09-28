@@ -1,0 +1,20 @@
+{
+    "vinhos": [
+      { "id": 1, 
+        "nome": "Vinho 01", 
+        "classificacao": "Tinto", 
+        "uva": "Cabernet Saugnon", 
+        "fabricante": "Vinicula Chilena", 
+        "paisOrigem": "Chile",
+        "anoSafra": 2000        
+      },
+      { "id": 2, 
+        "nome": "Vinho 02", 
+        "classificacao": "Tinto", 
+        "uva": "Cabernet Saugnon", 
+        "fabricante": "Vinicula Chilena", 
+        "paisOrigem": "Chile" ,
+        "anoSafra": 2000        
+      }      
+    ]
+}
